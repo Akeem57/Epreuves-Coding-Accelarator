@@ -1,3 +1,3 @@
 puts 'Hello world'
 puts "Salut la commu :p"
-puts "TEST"
+puts "TEST2"
