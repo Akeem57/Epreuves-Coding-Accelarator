@@ -3,8 +3,15 @@
 # utiliser une boucle !
 
 alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
-
-puts $* # Variable globale réservée 
-
+argument = ARGV[0]
+i = 0
+while i < alphabet.length
+    if alphabet[i] == argument
+      print alphabet[i..].join("")
+      break
+    end
+    i += 1
+end
+puts ""
 
 
