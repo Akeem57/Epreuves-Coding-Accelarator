@@ -11,7 +11,7 @@ if argument.to_i.to_s != argument
     puts "Arrête de déconner et donne moi un nombre"
 else argument = argument.to_i
     if argument == 0
-        puts "Tu le fais exprès? Donnem oi un nombre sauf 0 :p"
+        puts "Tu le fais exprès? Donne moi un nombre sauf 0 :p"
     elsif argument % 2 == 0
         puts "pair"
     elsif argument % 2 > 0
