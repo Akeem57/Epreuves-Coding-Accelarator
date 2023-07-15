@@ -5,4 +5,21 @@
 
 argument1 = ARGV[0]
 argument2 = ARGV[1]
-
+begin
+    if argument1.to_i.to_s == argument1 && argument2.to_i.to_s == argument2
+        argument1 = argument1.to_i
+        argument2 = argument2.to_i
+        résultat = argument1 / argument2
+        modulo = argument1 % argument2
+        if résultat != 0 
+            print résultat 
+            print "\s"
+            print modulo
+        else 
+            print "error."
+        end
+    end
+    puts""
+    rescue
+        puts "error."
+    end
