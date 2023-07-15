@@ -7,11 +7,12 @@ donnée en argument.
 argument = ARGV
 longueurArg = argument.length
 i=0
-while i < longueurArg
-    argWash = argument[i].gsub(/[^a-zA-Z!?,;: ]/, "")
-    argInv = argWash.reverse
-    print "#{argInv} "
-    i+=1
-   
+if argument.all?{|value| value.is_a?(String)}
+    while i < longueurArg
+        argWash = argument[i].gsub(/[^a-zA-Z!?,;: ]/, "")
+        argInv = argWash.reverse
+        print "#{argInv} "
+        i+=1
+    end
 end
 puts ""
