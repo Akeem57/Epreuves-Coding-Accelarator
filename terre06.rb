@@ -5,6 +5,13 @@ donnée en argument.
 =end
 
 argument = ARGV
-argWash = ARGV
-argInv = ARGV.reverse
-puts argInv
+longueurArg = argument.length
+i=0
+while i < longueurArg
+    argWash = argument[i].gsub(/[^a-zA-Z!?,;: ]/, "")
+    argInv = argWash.reverse
+    print "#{argInv} "
+    i+=1
+   
+end
+puts ""
