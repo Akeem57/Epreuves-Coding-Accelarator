@@ -12,14 +12,13 @@ begin
         résultat = argument1 / argument2
         modulo = argument1 % argument2
         if résultat != 0 
-            print résultat 
-            print "\s"
-            print modulo
+            puts "Résultat = #{résultat} " 
+            puts "Reste = #{modulo} "
         else 
-            print "error."
+            puts "error."
         end
     end
-    puts""
+    
     rescue
         puts "error."
     end
