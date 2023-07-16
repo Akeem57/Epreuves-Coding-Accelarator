@@ -16,5 +16,5 @@ begin
         puts "error"
     end        
 rescue
-
+    puts "error"
 end
