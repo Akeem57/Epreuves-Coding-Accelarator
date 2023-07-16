@@ -12,8 +12,8 @@ argCoupe12 = argCoupe[0].to_i-12
 midi = argCoupe[0].to_i
 minuit = argCoupe[0].to_i+12
 minutes = argCoupe[1]
-argError = argument[0].gsub(/:/,"")
-noChar = argError.to_i.to_s
+#argError = argument[0].gsub(/:/,"")
+#noChar = argError.to_i.to_s
 longArgWash1 = argCoupe[0].length
 longArgWash2 = argCoupe[1].length
 if longArg < 2  && longArgWash1 == 2 && longArgWash2 == 2
