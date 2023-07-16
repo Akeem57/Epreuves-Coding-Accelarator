@@ -15,11 +15,10 @@ begin
                     puts "Non, #{argument1.to_i} n'est pas un nombre premier"
                     
                     break
-                elsif d == agrument1
+                elsif d == argument1
                     puts "Oui, #{argument1.to_i} est un nombre premier"
                     break
                 else
-                    puts modulo
                     d = d+1 
                     next
                 end
