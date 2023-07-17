@@ -12,11 +12,11 @@ argCoupe12 = argCoupe[0].to_i-12
 midi = argCoupe[0].to_i
 minuit = argCoupe[0].to_i+12
 minutes = argCoupe[1]
-#argError = argument[0].gsub(/:/,"")
-#noChar = argError.to_i.to_s
+argError1 = /\A\d+\z/.match?(argCoupe[0])
+argError2 = /\A\d+\z/.match?(argCoupe[1])
 longArgWash1 = argCoupe[0].length
 longArgWash2 = argCoupe[1].length
-if longArg < 2  && longArgWash1 == 2 && longArgWash2 == 2
+if longArg < 2  && longArgWash1 == 2 && longArgWash2 == 2 && argError1 == true && argError2 == true
     if argCoupe[0].to_i > 12
         puts "#{argCoupe12}:#{minutes}PM"
     elsif argCoupe[0].to_i == 12 # midi = 12PM
@@ -29,5 +29,3 @@ if longArg < 2  && longArgWash1 == 2 && longArgWash2 == 2
 else
     puts "Veuillez entrer une heure au format suivant xx:xx"
 end
-
-#&& noChar == argError
