@@ -17,14 +17,16 @@ argError2 = /\A\d+\z/.match?(argCoupe[1])
 longArgWash1 = argCoupe[0].length
 longArgWash2 = argCoupe[1].length
 if longArg < 2  && longArgWash1 == 2 && longArgWash2 == 2 && argError1 == true && argError2 == true
-    if argCoupe[0].to_i > 12
+    if argCoupe[0].to_i > 12 && argCoupe[0].to_i < 24
         puts "#{argCoupe12}:#{minutes}PM"
     elsif argCoupe[0].to_i == 12 # midi = 12PM
         puts "#{midi}:#{minutes}PM"
     elsif argCoupe[0].to_i == 0 # minuit = 12AM
         puts "#{minuit}:#{minutes}AM"
-    else
+    elsif argCoupe[0].to_i < 12 && argCoupe[0].to_i > 0
         puts "#{argCoupe[0]}:#{minutes}AM"
+    else
+        puts "Veuillez entrer une heure au format suivant xx:xx"
     end
 else
     puts "Veuillez entrer une heure au format suivant xx:xx"
